@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management App - Add Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Management App - Add Car</h1>
+        <nav>
+            <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </nav>
+    </header>
+
+    <main>
+        <form id="addCarForm">
+            <h2>Add New Car</h2>
+            <input type="text" id="carTitle" placeholder="Title" required>
+            <textarea id="carDescription" placeholder="Description" required></textarea>
+            <input type="text" id="carType" placeholder="Car Type" required>
+            <input type="text" id="carCompany" placeholder="Company" required>
+            <input type="text" id="carDealer" placeholder="Dealer" required>
+            <input type="file" id="carImages" multiple accept="image/*">
+            <button type="submit">Add Car</button>
+        </form>
+    </main>
+
+    <script src="add-car.js"></script>
+</body>
+</html>

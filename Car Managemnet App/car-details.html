@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Management App - Car Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Management App - Car Details</h1>
+        <nav>
+            <button onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carDetails">
+            <h2 id="carTitle"></h2>
+            <p id="carDescription"></p>
+            <p id="carType"></p>
+            <p id="carCompany"></p>
+            <p id="carDealer"></p>
+            <div id="carImages" class="car-images"></div>
+            <button id="editCarBtn">Edit</button>
+            <button id="deleteCarBtn">Delete</button>
+        </div>
+
+        <form id="editCarForm" style="display: none;">
+            <h2>Edit Car</h2>
+            <input type="text" id="editCarTitle" placeholder="Title" required>
+            <textarea id="editCarDescription" placeholder="Description" required></textarea>
+            <input type="text" id="editCarType" placeholder="Car Type" required>
+            <input type="text" id="editCarCompany" placeholder="Company" required>
+            <input type="text" id="editCarDealer" placeholder="Dealer" required>
+            <input type="file" id="editCarImages" multiple accept="image/*">
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+
+    <script src="car-details.js"></script>
+</body>
+</html>
